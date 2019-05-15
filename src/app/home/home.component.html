@@ -1,0 +1,59 @@
+<div class="container">
+	<div class="row ml-4 mr-5 mt-5 mb-5">
+		<div class="col">
+			<h1> BEST-SELLERS</h1>
+		</div>
+	</div>
+
+	<div class="row bg-dark">
+
+		<div class="col mt-5 mb-5 ">
+
+			<div class="card-deck">
+
+			 <div  *ngFor='let book of books$ | slice:0:3; let i=index' class="col col-sm-6 col-md-4 mt-3 mb-3">
+			  <div   class="card w-75 mx-auto d-block">
+			    <img src="./assets/imgs/esquema_web-06.svg"class="card-img-top" alt="...">
+			    <div class="card-body">
+			      <h5 class="card-title">Título: {{book.title}}</h5>
+			      <h6 class="card-title">Autor: {{book.director}}</h6>
+			      <p class="card-text">Descripción: {{book.description | slice:0:60}}... </p>
+			      <p class="card-text text-center"><small class="text-muted">Price: 9.99€</small></p>
+			    </div>
+			  </div>
+			  </div>
+
+			</div>
+		</div>	
+	</div>	
+
+</div>
+
+<div class="container">
+	<div class="row ml-4 mr-5 mt-5 mb-5">
+		<div class="col">
+			<h1>PRÓXIMAMENTE</h1>
+		</div>
+	</div>
+
+	<div class="row bg-dark">
+
+		<div class="col mt-5 mb-5 ">
+
+			<div class="card-deck">
+
+			  <div  *ngFor='let book of books$ | slice:0:3; let i=index' class="col col-sm-6 col-md-4 mt-3 mb-3">
+					<div   class="card w-75 mx-auto d-block">
+						<img src="./assets/imgs/esquema_web-06.svg"class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Título: {{book.title}}</h5>
+							<h6 class="card-title">Autor: {{book.director}}</h6>
+							<p class="card-text">Descripción: {{book.description | slice:0:60}}... </p>
+							<p class="card-text text-center"><small class="text-muted">Price: 9.99€</small></p>
+						</div>
+					</div>
+					</div>
+
+			</div>
+		</div>	
+	</div>	
